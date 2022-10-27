@@ -1,0 +1,151 @@
+html,
+body,
+.overall-container{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.index-banner{
+    height: 10rem;
+    width: 10rem;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 2rem;
+}
+.welcome-screen{
+    height: 100%;
+    position: relative;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+.welcome-screen p{
+    font-size: x-large;
+    font-weight: bold;
+}
+.welcome-screen > .btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 8rem;
+    margin-top: 3rem;
+}
+.welcome-screen button{
+    border: 0;
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+    font-size: large;
+    color: white;
+    background-color: blue;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.index-banner img{
+    animation: indexAnime 3s ease-in-out infinite;
+}
+@keyframes indexAnime {
+    from {
+        transform: rotateY(0deg);
+    } to {
+        transform: rotateY(360deg);
+    }
+}
+
+/* CSS for the item specifications */
+.container{
+    position: relative;
+}
+.spec-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+}
+.spec-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: x-large;
+    color: blue;
+}
+.spec-header button{
+    border: 0;
+    border-radius: 0.4rem;
+    background-color: blue;
+    color: white;
+    font-size: large;
+    padding: 0.4rem;
+}
+.spec-header .tags i{
+    margin-left: 0.7rem;
+}
+.spec-desc{
+    border: 0.1rem solid;
+    width: 50%;
+    font-size: large;
+    position: fixed;
+    bottom: 2rem;
+    right: 0;
+    background-color: rgba(34, 34, 34, 0.5);
+    color: white;
+}
+.spec-desc .typo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+.spec-desc .colors{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.spec-desc .size > span{
+    font-weight: bold;
+}
+.spec-desc .sizes > span{
+    border: 0;
+    border-radius: 0.2rem;
+    background-color: rgb(189, 189, 189);
+    padding: 0.1rem;
+    margin-left: 0.2rem;
+}
+.spec-desc .size{
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+.spec-desc .offer{
+    position: relative;
+    height: 10rem;
+    margin-left: 0.5rem;
+}
+.spec-desc .add{
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    bottom: 0;
+    width: 5rem;
+    text-align: center;
+    border: 0;
+    box-shadow: 0 0 0.4rem;
+    font-size: x-large;
+    padding: 0.5rem;
+    padding-top: 2rem;
+    font-weight: bold;
+    background-color: blue;
+    border-top-left-radius: 1rem;
+}

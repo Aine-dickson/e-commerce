@@ -1,0 +1,328 @@
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.home-screen{
+    height: 100%;
+    position: relative;
+    margin-right: 0.3rem;
+}
+.home-screen .side-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 8;
+    height: 100%;
+    width: 98%;
+    color: white;
+    display: none;
+}
+.home-screen .menu-list{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 10rem;
+    height: 93%;
+    border-right: 0.1rem solid;
+    padding-left: 0.5rem;
+    background-color: rgba(0, 0, 0.5);
+}
+.home-screen .overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.home-screen .profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 0.1rem solid;
+}
+.home-screen .profile-image{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.home-screen .menu-item{
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.1rem solid;
+}
+.home-screen .menu-item span{
+    margin-left: 0.7rem;
+}
+.home-screen .log{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 0.1rem solid;
+    padding: 0.5rem;
+    font-size: x-large;
+}
+.home-screen header{
+    margin-bottom: 0.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 0.5rem;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.home-screen header > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.home-screen header > div > span{
+    margin-left: 0.5rem;
+    margin-right: 00.5rem;
+    font-size: x-large;
+}
+.home-screen .title{
+    font-family: "Sofia", sans-serif;
+    font-weight: bold;
+    text-shadow: 0.3rem 0.3rem 0.4rem #ababab;
+}
+.home-screen main{
+    margin-top: 3rem;
+}
+.home-screen .filter-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+}
+.home-screen .sort{
+    font-size: medium;
+    margin-right: 1rem;
+}
+.home-screen .options{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(19, 19, 19, 0.6);
+    position: absolute;
+    z-index: 7;
+    color: white;
+    display: none;
+}
+.home-screen .options > span{
+    border-bottom: 0.1rem solid gray;
+    margin-bottom: 0.2rem;
+    padding: 0.2rem;
+}
+.home-screen .most-popular-slider{
+    height: 10rem;
+    margin: auto;
+    margin-left: 0.3rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    width: auto;
+    overflow: hidden;
+    background-color: rgba(145, 255, 218, 0.4);
+    display: flex;
+    flex-direction: row;
+}
+.home-screen .popular-item{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+.home-screen .popular-image{
+    height: 100%;
+    width: 100%;
+}
+.home-screen .popular-item .desc{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 2;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 3rem;
+}
+.home-screen .filtered-item{
+    height: 15rem;
+    width: 90%;
+    margin: auto;
+    border-radius: 0.4rem;
+    margin-bottom: 00.5rem;
+    overflow: hidden;
+    position: relative;
+}
+.home-screen .filtered-image{
+    height: 100%;
+    width: 100%;
+}
+.home-screen .filtered-item .desc{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(31, 31, 31, 0.5);
+}
+.home-screen .filtered-item .desc div{
+    display: flex;
+    flex-direction: row;
+}
+.home-screen .filtered-item span{
+    margin-right: 0.5rem;
+    font-size: larger;
+}
+.home-screen .promo-banner{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 3rem;
+    height: 10rem;
+    width: 80%;
+    margin: auto;
+    z-index: 6;
+    overflow: hidden;
+    box-shadow: 0 0 0.5rem rgb(27, 27, 27);
+    display: none;
+}
+.home-screen .promo-item{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.home-screen .promo-banner .close-banner{
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    z-index: 6;
+    font-size: x-large;
+    font-weight: bold;
+    color: red;
+}
+.home-screen .close-banner:hover{
+    border: 0;
+    background-color: #ababab;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+}
+.home-screen .promo-image{
+    height: 100%;
+    width: 100%;
+}
+.home-screen .promo-desc{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15%;
+    z-index: 8;
+    display: flex;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+.home-screen .discount-percent{
+    color: red;
+}
+.home-screen .pricing{
+    background-color: rgb(10, 10, 10);
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
+}
+footer{
+    z-index: 14;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(254, 255, 255);
+    padding: 0.3rem;
+    font-size: x-large;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    box-shadow: 0 0 1rem rgb(8, 8, 8);
+}
+footer > .first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+footer #srch-bar,
+footer #srch-bar{
+    height: 2rem;
+    border: 0.1rem solid gray;
+    border-radius: 0.3rem;
+    font-size: large;
+    box-shadow: inset 0 0 0.3rem gray;
+    outline: none;
+    margin-left: 2rem;
+}
+footer .sec .fas{
+    position: absolute;
+    top: 0.4rem;
+    right: 4.5rem; 
+    z-index: 3;
+    font-size: large;
+} 
+footer .sec{
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    display: none;
+    background-color: aliceblue;
+}
+@keyframes menuGlow {
+    from {
+        font-size: smaller;
+        width: 0;
+    } to {
+        font-size: x-large;
+        width: 10rem;
+    }
+}
+@keyframes menuShrink {
+    from {
+        font-size: x-large;
+        width: 10rem;
+    } to {
+        font-size: smaller;
+        width: 0;
+    }
+}
+.favorite-true{
+    color: red;
+}
