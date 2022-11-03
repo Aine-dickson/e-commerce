@@ -89,20 +89,33 @@ function homePage(){
     let menuBtn = document.querySelector(".home-screen .menu")
     let menuBar = document.querySelector(".side-bar")
     let menuList = document.querySelector(".menu-list")
-    
+    let overlay = document.querySelector(".overlay")
+
     menuBtn.addEventListener('click', () =>{
         document.querySelector("footer .sec").style.display = "none"
         menuBar.style.display = "block"
         menuList.style.animation = "menuGlow 0.4s ease-in-out"
     })
-    document.querySelector(".overlay").addEventListener('click', () =>{
+    overlay.addEventListener('click', () =>{
         menuList.style.animation = "menuShrink 0.4s ease-in-out"
         setTimeout(() =>{
             menuBar.style.display = "none"
         }, 250)
     })
+    overlay.addEventListener("touchmove", () => {
+        setTimeout(() =>{
+            menuList.style.animation = "menuShrink 0.4s ease-in-out"
+            setTimeout(() =>{
+                menuBar.style.display = "none"
+            }, 150)
+        },250)
+    })
+
     document.querySelector(".home-screen .cart").addEventListener("click", () =>{
         pageProcessor("cart", cart)
+    })
+    document.querySelector("#homePage").addEventListener("click", () => {
+        document.querySelector(".main-header").style.display = "block"
     })
     promoDisplay()
     document.querySelector(".promo-banner .close-banner").addEventListener("click", () =>{
@@ -143,28 +156,27 @@ function homePage(){
 }
 
 function favorite(){
+    crossPurpose()
     promoControl = false
     if (favorites.length == 0){
-        document.querySelector(".favorite-screen").textContent = "You have no favorite item yet!"
-    } else {
-        document.querySelector(".favorite-screen").textContent = "You now have favorite item yet!"
+        document.querySelector("#favorite-window").textContent = "You have no favorite item yet!"
     }
 }
 
 function about(){
-    console.log("About loaded")
+    crossPurpose()
 }
 function contact(){
-    console.log("Contact loaded")
+    crossPurpose()
 }
 function cart(){
-    console.log("Cart loaded")
+    crossPurpose()
 }
 function dashboard(){
-    console.log("Dashboard loaded")
+    crossPurpose()
 }
 function reviews(){
-    console.log("Reviews loaded")
+    crossPurpose()
 }
 function specOrganiser(type){
     let homeScreenChildren = document.querySelectorAll(".home-screen-child")
@@ -375,6 +387,14 @@ function favoriteItem(){
     })
 }
 
+function crossPurpose(){
+    let header = document.querySelector(".main-header")
+    header.style.display = "none"
+    document.querySelector(".fa-chevron-left").addEventListener("click", () => {
+        header.style.display = "block"
+        document.querySelector("#homePage").click()
+    })
+}
 // let tri = [1,2,3]
 // tri.pop(1)
 // console.log(tri)
