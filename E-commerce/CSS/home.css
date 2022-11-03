@@ -18,6 +18,7 @@ img{
     width: 98%;
     color: white;
     display: none;
+    z-index: 12;
 }
 .home-screen .menu-list{
     position: relative;
@@ -325,4 +326,229 @@ footer .sec{
 }
 .favorite-true{
     color: red;
+}
+
+/* favorites css */
+.cart-screen header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+    font-size: x-large;
+    font-weight: bold;
+    box-shadow: 0 0.2rem 0.4rem gray;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.cart-screen .cart-item{
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 0.4rem gray;
+    margin-bottom: 1rem;
+}
+.cart-desc{
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
+    font-weight: bold;
+}
+.cart-desc section:first-child{
+    margin-right: 2rem;
+}
+.cart-screen #cart-window{
+    margin-top: 4rem;
+}
+.cart-screen .cart-item-size{
+    margin-top: 0.5rem;
+}
+.cart-screen .sizes{
+    color: rgb(88, 88, 88);
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.cart-image{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.3rem gray;
+    margin-right: 1rem;
+}
+.cart-screen .cart-item i{
+    font-size: x-large;
+    margin-right: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+/* cart css */
+.cart-screen header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+    font-size: x-large;
+    font-weight: bold;
+    box-shadow: 0 0.2rem 0.4rem gray;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.cart-screen .cart-item{
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 0.4rem gray;
+    margin-bottom: 1rem;
+}
+.cart-desc{
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
+    font-weight: bold;
+}
+.cart-desc section:first-child{
+    margin-right: 2rem;
+}
+.cart-screen #cart-window{
+    margin-top: 4rem;
+}
+.cart-screen .cart-item-size{
+    margin-top: 0.5rem;
+}
+.cart-screen .sizes{
+    color: rgb(88, 88, 88);
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.cart-image{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.3rem gray;
+    margin-right: 1rem;
+}
+.cart-screen .cart-item i{
+    font-size: x-large;
+    margin-right: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Favorites css */
+.favorite-screen header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+    font-size: x-large;
+    font-weight: bold;
+    box-shadow: 0 0.2rem 0.4rem gray;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.favorite-screen .favorite-item{
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 0.4rem gray;
+    margin-bottom: 1rem;
+}
+.favorite-desc{
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
+    font-weight: bold;
+}
+.favorite-desc section:first-child{
+    margin-right: 2rem;
+}
+.favorite-screen #favorite-window{
+    margin-top: 4rem;
+}
+.favorite-screen .favorite-item-size{
+    margin-top: 0.5rem;
+}
+.favorite-screen .sizes{
+    color: rgb(88, 88, 88);
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.favorite-image{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.3rem gray;
+    margin-right: 1rem;
+}
+.favorite-screen .favorite-item i{
+    font-size: x-large;
+    margin-right: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+/* reviews css */
+.review-card{
+    text-align: center;
+    border: 0.3rem double green;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.review-section{
+    margin-top: 3rem;
+}
+.review span:first-child{
+    font-size: 1.5rem;
+    color: rgb(1, 90, 1);
+    font-family: "Sofia", sans-serif;
+    text-shadow: 0 0.2rem 0.3rem;
+}
+.review > p{
+    font-family: 'Caveat';
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.review-image{
+    height: 5rem;
+    width: 5rem;
+    margin: auto;
+    border: 0.1rem green solid;
+    box-shadow: 0 0 0.2rem green;
+    border-radius: 50%;
+    overflow: hidden;
+    outline: 0.1rem solid green;
+    outline-offset: 0.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.reviews-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: large;
+    box-shadow: 0 0.2rem 0.3rem gray;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+    left: 0;
+    right: 0;
+    top: 0;
 }
